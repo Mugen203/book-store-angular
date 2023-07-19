@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-public',
   templateUrl: './public.component.html',
   styleUrls: ['./public.component.scss']
 })
-export class PublicComponent {
+export class PublicComponent implements OnInit{
 
+  public book: number = 12;
+  ngOnInit(): void {
+  }
 }
